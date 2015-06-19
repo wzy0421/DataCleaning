@@ -26,3 +26,4 @@ colnames(X_cleared) <- names;
 
 #From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 X_tiny <- aggregate(X_cleared, y_labels, mean);
+write.table(X_tiny,"X_tiny.txt");
